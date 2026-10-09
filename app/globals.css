@@ -351,29 +351,6 @@ body {
   transform: translateX(120%);
 }
 
-.services-slide {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 2.4s cubic-bezier(0.45, 0, 0.55, 1);
-}
-
-.services-slide.is-prev,
-.services-slide.is-active {
-  visibility: visible;
-  opacity: 1;
-}
-
-.services-slide.is-prev {
-  z-index: 1;
-}
-
-.services-slide.is-active {
-  z-index: 2;
-}
-
 @media (scripting: none) {
   .reveal {
     opacity: 1;

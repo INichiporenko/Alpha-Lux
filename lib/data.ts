@@ -43,8 +43,8 @@ export const servicesSlideshow = [
   "/photos/content/9.jpg",
   "/photos/content/14.jpg",
   "/photos/content/19.jpg",
-  "/photos/content/hero-content.jpg",
-  "/photos/content/raume8.jpg",
+  "/photos/content/wand5.jpg",
+  "/photos/content/kuche3e.jpg",
 ] as const;
 
 export const onSitePhotos = [

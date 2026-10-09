@@ -1,27 +1,31 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import { servicesSlideshow } from "@/lib/data";
 
-const INTERVAL_MS = 3000;
+const INTERVAL_MS = 4000;
 
 export function ServicesSlideshow({ alt }: { alt: string }) {
-  const [{ current, previous }, setSlide] = useState({ current: 0, previous: 0 });
+  const [index, setIndex] = useState(0);
+  const [failed, setFailed] = useState<string[]>([]);
+  const slides = servicesSlideshow.filter((src) => !failed.includes(src));
+  const src = slides[index] ?? slides[0];
 
   useEffect(() => {
+    if (slides.length < 2) return;
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
     if (reduce.matches) return;
 
     const id = window.setInterval(() => {
-      setSlide(({ current }) => ({
-        previous: current,
-        current: (current + 1) % servicesSlideshow.length,
-      }));
+      setIndex((i) => (i + 1) % slides.length);
     }, INTERVAL_MS);
 
     return () => window.clearInterval(id);
-  }, []);
+  }, [slides.length]);
+
+  if (!src) {
+    return <div className="relative h-[420px] overflow-hidden rounded-2xl bg-panel md:h-[560px]" />;
+  }
 
   return (
     <div
@@ -29,23 +33,17 @@ export function ServicesSlideshow({ alt }: { alt: string }) {
       role="img"
       aria-label={alt}
     >
-      {servicesSlideshow.map((src, i) => (
-        <div
-          key={src}
-          className={`services-slide ${i === current ? "is-active" : i === previous ? "is-prev" : ""}`}
-        >
-          <Image
-            src={src}
-            alt=""
-            fill
-            unoptimized
-            className="object-cover"
-            sizes="(max-width: 1024px) 100vw, 46vw"
-            priority={i === 0}
-          />
-        </div>
-      ))}
-      <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-navy/50 via-transparent to-navy/20" />
+      <img
+        key={src}
+        src={src}
+        alt=""
+        className="absolute inset-0 h-full w-full object-cover"
+        onError={() => {
+          setFailed((list) => (list.includes(src) ? list : [...list, src]));
+          setIndex(0);
+        }}
+      />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-navy/50 via-transparent to-navy/20" />
     </div>
   );
 }
