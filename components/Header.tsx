@@ -207,7 +207,7 @@ export function Header({ lang, dict }: { lang: Locale; dict: Dictionary }) {
             open ? "translate-y-0 opacity-100" : "translate-y-3 opacity-0"
           }`}
         >
-          <div className="flex flex-1 flex-col justify-center gap-1">
+          <div className="flex flex-1 flex-col justify-start gap-1 pt-2">
             {nav.map((item) => (
               <Link
                 key={item.label}

@@ -33,7 +33,7 @@ export function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
           </ul>
         </div>
 
-        <div className="min-w-0">
+        <div className="min-w-0 text-right md:text-left">
           <p className="text-[11px] tracking-[0.28em] uppercase text-blue-bright">
             {dict.nav.contact}
           </p>

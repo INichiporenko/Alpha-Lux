@@ -24,7 +24,11 @@ export function ServicesSlideshow({ alt }: { alt: string }) {
   }, []);
 
   return (
-    <div className="relative h-[420px] overflow-hidden rounded-2xl md:h-[560px]">
+    <div
+      className="relative h-[420px] overflow-hidden rounded-2xl md:h-[560px]"
+      role="img"
+      aria-label={alt}
+    >
       {servicesSlideshow.map((src, i) => (
         <div
           key={src}
@@ -32,8 +36,9 @@ export function ServicesSlideshow({ alt }: { alt: string }) {
         >
           <Image
             src={src}
-            alt={i === 0 ? alt : ""}
+            alt=""
             fill
+            unoptimized
             className="object-cover"
             sizes="(max-width: 1024px) 100vw, 46vw"
             priority={i === 0}
