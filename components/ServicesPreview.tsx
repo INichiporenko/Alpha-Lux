@@ -8,9 +8,9 @@ export function ServicesPreview({ lang, dict }: { lang: Locale; dict: Dictionary
   const preview = dict.services.filter((_, i) => [0, 1, 3, 6, 9, 11].includes(i));
 
   return (
-    <section className="bg-ink py-24 md:py-32">
+    <section className="bg-ink pt-16 pb-8 md:py-32">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
-        <div className="grid items-start gap-12 lg:grid-cols-[1.08fr_0.92fr] lg:gap-20">
+        <div className="grid items-start gap-8 lg:grid-cols-[1.08fr_0.92fr] lg:gap-20">
           <div>
             <Reveal>
               <p className="text-[11px] tracking-[0.42em] uppercase text-blue-bright">
@@ -45,9 +45,7 @@ export function ServicesPreview({ lang, dict }: { lang: Locale; dict: Dictionary
             </Reveal>
           </div>
 
-          <Reveal dir="clip">
-            <ServicesSlideshow alt={dict.servicesHome.title} />
-          </Reveal>
+          <ServicesSlideshow alt={dict.servicesHome.title} />
         </div>
       </div>
     </section>

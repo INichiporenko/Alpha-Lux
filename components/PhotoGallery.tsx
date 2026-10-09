@@ -7,7 +7,7 @@ import { Reveal } from "@/components/Reveal";
 
 export function PhotoGallery({ lang, dict }: { lang: Locale; dict: Dictionary }) {
   return (
-    <section className="bg-ink py-24 md:py-32">
+    <section className="bg-ink pt-8 pb-24 md:py-32">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <Reveal>

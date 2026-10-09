@@ -24,26 +24,21 @@ export function ServicesSlideshow({ alt }: { alt: string }) {
   }, [slides.length]);
 
   if (!src) {
-    return <div className="relative h-[420px] overflow-hidden rounded-2xl bg-panel md:h-[560px]" />;
+    return <div className="h-64 overflow-hidden rounded-2xl bg-panel md:h-[560px]" />;
   }
 
   return (
-    <div
-      className="relative h-[420px] overflow-hidden rounded-2xl md:h-[560px]"
-      role="img"
-      aria-label={alt}
-    >
+    <div className="overflow-hidden rounded-2xl" role="img" aria-label={alt}>
       <img
         key={src}
         src={src}
         alt=""
-        className="absolute inset-0 h-full w-full object-cover"
+        className="block h-64 w-full object-cover md:h-[560px]"
         onError={() => {
           setFailed((list) => (list.includes(src) ? list : [...list, src]));
           setIndex(0);
         }}
       />
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-navy/50 via-transparent to-navy/20" />
     </div>
   );
 }

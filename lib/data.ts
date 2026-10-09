@@ -34,7 +34,7 @@ export const images = {
   hallway: unsplash("photo-1600489000022-c2086d310d13"),
   facade: unsplash("photo-1600047509807-ba8f99d2cdbc"),
   detail: unsplash("photo-1600210491892-03d54c0aaf87"),
-  process: "/photos/content/about-work-far.jpg",
+  process: "/photos/content/about-team-v5.jpg",
   aboutActivity: "/photos/content/9.jpg",
   materials: unsplash("photo-1615874959474-d453339d4d56"),
 };

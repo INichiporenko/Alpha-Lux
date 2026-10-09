@@ -127,7 +127,7 @@ export const en: Dictionary = {
     title: "Your renovation — from the first wall to the last door",
     lead:
       "Alphalux delivers complete turnkey renovations. All construction and finishing work is carried out professionally from a single source. We take full charge of the process so you get an ideal result without extra worry",
-    processAlt: "Studio work on site",
+    processAlt: "The Alphalux team at work",
     activity: "Services",
     activityTitle: "What we carry out",
     p1: "We renovate apartments and houses, kitchens and bathrooms. The scope includes demolition, preparation, filling, painter’s fleece and painting, drywall, insulation and soundproofing, floor works, panels, accent walls, and interior door installation",

@@ -126,7 +126,7 @@ export const de = {
     title: "Ihre Renovierung — von der ersten Wand bis zur letzten Tür",
     lead:
       "Alphalux realisiert umfassende Renovierungen schlüsselfertig. Alle Bau- und Ausbauarbeiten werden professionell und aus einer Hand ausgeführt. Wir übernehmen die komplette Organisation des Ablaufs, damit Sie ein ideales Ergebnis ohne unnötigen Aufwand erhalten",
-    processAlt: "Arbeit des Studios auf der Baustelle",
+    processAlt: "Das Alphalux-Team bei der Arbeit",
     activity: "Leistungen",
     activityTitle: "Was wir ausführen",
     p1: "Wir renovieren Wohnungen und Häuser, Küchen und Bäder. Zum Leistungsumfang gehören Rückbau, Vorbereitung, Spachteln, Malervlies und Anstrich, Trockenbau, Dämmung und Schallschutz, Bodenarbeiten, Paneele, Akzentwände sowie Montage von Innentüren",
