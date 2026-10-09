@@ -42,7 +42,7 @@ export function LanguageSwitcher({ lang, label }: { lang: Locale; label: string 
         aria-expanded={open}
         aria-haspopup="listbox"
         onClick={() => setOpen((value) => !value)}
-        className="inline-flex items-center gap-1.5 leading-none text-[12px] tracking-[0.18em] uppercase text-ice hover:text-white"
+        className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap leading-none text-[11px] tracking-[0.14em] uppercase text-ice hover:text-white xl:text-[12px] xl:tracking-[0.18em]"
       >
         <span>{localeLabels[lang]}</span>
         <svg

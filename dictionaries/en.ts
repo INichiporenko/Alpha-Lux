@@ -24,37 +24,37 @@ export const en: Dictionary = {
   logoHome: "Alphalux — back to home",
   hero: {
     eyebrow: "Renovation · Interior finishing",
-    title: ["Custom Interior Renovation.", "From Rough Work to the Final Detail."],
-    text: "Whether walls, flooring, doors, or full remodeling: AlphaLux handles all services from a single source. Forget coordination stress — with us, you have only one contact person managing everything.",
+    title: ["Custom Interior Renovation", "From Rough Work to the Final Detail"],
+    text: "Whether walls, flooring, doors, or full remodeling: AlphaLux handles all services from a single source. Forget coordination stress — with us, you have only one contact person managing everything",
     projects: "View projects",
     consult: "Request a consultation",
     imageAlt: "Renovation becoming a living room",
   },
   why: {
     eyebrow: "Why Choose AlphaLux?",
-    title: "Your Project in Safe Hands.",
-    text: "We combine expert craftsmanship with a seamless interior renovation process. Experience a reliable service that turns your vision into reality without the hassle.",
+    title: "Your Project in Safe Hands",
+    text: "We combine expert craftsmanship with a seamless interior renovation process. Experience a reliable service that turns your vision into reality without the hassle",
   },
   reasons: [
     {
       num: "01",
       title: "Complete Service from a Single Source — Zero Coordination Stress",
-      text: "From demolition and drywall to painting and flooring, we combine all trades. You don’t need to search for different contractors. You have only one dedicated contact person managing the entire process from start to finish.",
+      text: "From demolition and drywall to painting and flooring, we combine all trades. You don’t need to search for different contractors. You have only one dedicated contact person managing the entire process from start to finish",
     },
     {
       num: "02",
       title: "From Scratch to the Final Finish",
-      text: "We cover the entire spectrum of interior renovation. Whether it's full home remodeling, kitchen and bath updates, acoustic panels, interior doors, or wall preparation — we handle your project from A to Z.",
+      text: "We cover the entire spectrum of interior renovation. Whether it's full home remodeling, kitchen and bath updates, acoustic panels, interior doors, or wall preparation — we handle your project from A to Z",
     },
     {
       num: "03",
       title: "High Qualification & Years of Experience",
-      text: "Our team consists of skilled professionals with deep expertise. Thanks to years of practical experience, we solve complex challenges cleanly, safely, and professionally.",
+      text: "Our team consists of skilled professionals with deep expertise. Thanks to years of practical experience, we solve complex challenges cleanly, safely, and professionally",
     },
     {
       num: "04",
       title: "Reliability & Uncompromising Quality",
-      text: "Punctuality, clean job sites, transparent communication, and top-tier craftsmanship are our standards. We deliver on time and tailored precisely to your expectations.",
+      text: "Punctuality, clean job sites, transparent communication, and top-tier craftsmanship are our standards. We deliver on time and tailored precisely to your expectations",
     },
   ],
   gallery: {
@@ -73,7 +73,7 @@ export const en: Dictionary = {
   reviews: {
     eyebrow: "Reviews",
     title: "5.0 out of 5.0",
-    lead: "Clients from Oberhausen and the surrounding area rate the collaboration publicly. All reviews are available on the Google profile and on CHECK24.",
+    lead: "Clients from Oberhausen and the surrounding area rate the collaboration publicly. All reviews are available on the Google profile and on CHECK24",
     google: "Google",
     check24: "CHECK24",
     ofFive: "/5.0",
@@ -88,12 +88,12 @@ export const en: Dictionary = {
       "Always reachable, clear agreements and quick replies",
       "Friendly, responsive to wishes, fair value for money",
     ],
-    disclaimer: "Ratings come from the public Google Business profile and the CHECK24 profile.",
+    disclaimer: "Ratings come from the public Google Business profile and the CHECK24 profile",
   },
   contact: {
     eyebrow: "Get in touch",
     title: "Let’s talk about your project",
-    text: "Tell us about the apartment, house, or commercial space. We will reply within a working day and suggest a first meeting.",
+    text: "Tell us about the apartment, house, or commercial space. We will reply within a working day and suggest a first meeting",
     name: "Name",
     namePh: "How should we address you",
     phone: "Phone",
@@ -115,7 +115,7 @@ export const en: Dictionary = {
   },
   footer: {
     blurb:
-      "Renovation of apartments and houses: walls, ceilings, floors, drywall, and doors — precise and on schedule.",
+      "Renovation of apartments and houses: walls, ceilings, floors, drywall, and doors — precise and on schedule",
     nav: "Navigation",
     line: "Interiors · Renovation",
   },
@@ -126,12 +126,12 @@ export const en: Dictionary = {
     eyebrow: "About us",
     title: "Your renovation — from the first wall to the last door",
     lead:
-      "Alphalux delivers complete turnkey renovations. All construction and finishing work is carried out professionally from a single source. We take full charge of the process so you get an ideal result without extra worry.",
+      "Alphalux delivers complete turnkey renovations. All construction and finishing work is carried out professionally from a single source. We take full charge of the process so you get an ideal result without extra worry",
     processAlt: "Studio work on site",
     activity: "Services",
     activityTitle: "What we carry out",
-    p1: "We renovate apartments and houses, kitchens and bathrooms. The scope includes demolition, preparation, filling, painter’s fleece and painting, drywall, insulation and soundproofing, floor works, panels, accent walls, and interior door installation.",
-    p2: "The work is precise and calm: even planes, clean junctions, a readable sequence. Every step is agreed, every deadline is locked in the schedule.",
+    p1: "We renovate apartments and houses, kitchens and bathrooms. The scope includes demolition, preparation, filling, painter’s fleece and painting, drywall, insulation and soundproofing, floor works, panels, accent walls, and interior door installation",
+    p2: "The work is precise and calm: even planes, clean junctions, a readable sequence. Every step is agreed, every deadline is locked in the schedule",
     how: "How we work",
     howTitle: "Six steps to handover",
     onSite: "On site",
@@ -144,51 +144,51 @@ export const en: Dictionary = {
   services: [
     {
       title: "Kitchen and bathroom renovation",
-      text: "Renovation of kitchens and bathrooms: surfaces, junctions, and clean everyday details.",
+      text: "Renovation of kitchens and bathrooms: surfaces, junctions, and clean everyday details",
     },
     {
       title: "Renovation of apartments and houses",
-      text: "Renovation of apartments and houses — from preparing the rooms to finished surfaces.",
+      text: "Renovation of apartments and houses — from preparing the rooms to finished surfaces",
     },
     {
       title: "Strip-out and room preparation",
-      text: "Removal of old finishes and preparation of rooms for renovation.",
+      text: "Removal of old finishes and preparation of rooms for renovation",
     },
     {
       title: "Drywall partitions and suspended ceilings",
-      text: "Installation of plasterboard partitions and suspended ceilings. Clear geometry, clean junctions.",
+      text: "Installation of plasterboard partitions and suspended ceilings. Clear geometry, clean junctions",
     },
     {
       title: "Insulation and soundproofing of drywall constructions",
-      text: "Thermal insulation and soundproofing of drywall constructions — quieter and more comfortable day to day.",
+      text: "Thermal insulation and soundproofing of drywall constructions — quieter and more comfortable day to day",
     },
     {
       title: "Filling walls and ceilings",
-      text: "Filling walls and ceilings. Even, calm planes as the base for paint or covering.",
+      text: "Filling walls and ceilings. Even, calm planes as the base for paint or covering",
     },
     {
       title: "Painter’s fleece and professional painting",
-      text: "Hanging painter’s fleece and professional painting — even, durable surfaces.",
+      text: "Hanging painter’s fleece and professional painting — even, durable surfaces",
     },
     {
       title: "Floor preparation and levelling",
-      text: "Preparing and levelling the subfloor before the new covering goes down.",
+      text: "Preparing and levelling the subfloor before the new covering goes down",
     },
     {
       title: "Laying laminate, vinyl, carpet, and PVC",
-      text: "Laying laminate, vinyl, carpet, and PVC. Precise joints, clean transitions.",
+      text: "Laying laminate, vinyl, carpet, and PVC. Precise joints, clean transitions",
     },
     {
       title: "Acoustic and decorative panels",
-      text: "Installation of acoustic and decorative panels on walls and ceilings.",
+      text: "Installation of acoustic and decorative panels on walls and ceilings",
     },
     {
       title: "Accent walls and decorative niches",
-      text: "Accent walls and decorative niches — a clear focal point in the room.",
+      text: "Accent walls and decorative niches — a clear focal point in the room",
     },
     {
       title: "Interior doors and frames",
-      text: "Installation and replacement of interior doors and frames. Accurate fit, quiet swing, clean junction.",
+      text: "Installation and replacement of interior doors and frames. Accurate fit, quiet swing, clean junction",
     },
   ],
   servicesHome: {
@@ -203,38 +203,38 @@ export const en: Dictionary = {
       "Interior renovation with Alphalux: apartments, kitchens, bathrooms, drywall, floors, and doors.",
     eyebrow: "Services",
     title: "Quality renovation: reliable, on time, from a single source",
-    text: "Planning a renovation of your apartment or house? Alphalux offers a complete approach: preparing rooms, renewing surfaces, installing drywall, laying floors, and fitting doors. Every stage is carried out by a coordinated team without middlemen — we guarantee German quality and clear deadlines.",
+    text: "Planning a renovation of your apartment or house? Alphalux offers a complete approach: preparing rooms, renewing surfaces, installing drywall, laying floors, and fitting doors. Every stage is carried out by a coordinated team without middlemen — we guarantee German quality and clear deadlines",
   },
   process: [
     {
       step: "01",
       title: "Introduction",
-      text: "A site visit and a conversation about the apartment or house. We clarify scope, rooms, and timeline.",
+      text: "A site visit and a conversation about the apartment or house. We clarify scope, rooms, and timeline",
     },
     {
       step: "02",
       title: "Quote",
-      text: "Works, materials, and dates. You know what will be carried out before we start.",
+      text: "Works, materials, and dates. You know what will be carried out before we start",
     },
     {
       step: "03",
       title: "Preparation",
-      text: "Strip-out of old finishes and preparation of the rooms — clean, so the new work holds.",
+      text: "Strip-out of old finishes and preparation of the rooms — clean, so the new work holds",
     },
     {
       step: "04",
       title: "Works",
-      text: "Drywall, filling, floors, panels, doors. Weekly updates and a fixed schedule.",
+      text: "Drywall, filling, floors, panels, doors. Weekly updates and a fixed schedule",
     },
     {
       step: "05",
       title: "Surfaces",
-      text: "Fleece, paint, coverings, and final junctions. The room is finished, not merely “almost done”.",
+      text: "Fleece, paint, coverings, and final junctions. The room is finished, not merely “almost done”",
     },
     {
       step: "06",
       title: "Handover",
-      text: "Acceptance, 24-month warranty, and clear aftercare if something needs adjusting.",
+      text: "Acceptance, 24-month warranty, and clear aftercare if something needs adjusting",
     },
   ],
   projectsPage: {
@@ -242,8 +242,13 @@ export const en: Dictionary = {
     metaDescription: "Apartments, houses, and commercial interiors delivered by Alphalux.",
     eyebrow: "Portfolio",
     title: "Projects where everything comes together",
-    text: "From apartments and houses to kitchens and bathrooms. Every project: preparation, surfaces, drywall, floors, and doors.",
+    text: "From apartments and houses to kitchens and bathrooms. Every project: preparation, surfaces, drywall, floors, and doors",
     close: "Close",
+    ctaEyebrow: "Consultation",
+    ctaTitle: "Want the same in your home?",
+    ctaText:
+      "Tell us about your apartment, house, or office. We’ll prepare an estimate and deliver the work turnkey — all from one team",
+    cta: "Book a consultation",
   },
   filters: {
     all: "All",
@@ -257,27 +262,27 @@ export const en: Dictionary = {
     patriarshi: {
       title: "A modern and practical kitchen",
       place: "Moscow",
-      text: "A turnkey kitchen: wall preparation, precise filling, paint, and clean junctions at worktops and appliances. Quality in every plane — from strip-out to the last detail.",
+      text: "A turnkey kitchen: wall preparation, precise filling, paint, and clean junctions at worktops and appliances. Quality in every plane — from strip-out to the last detail",
     },
     barvikha: {
       title: "A practical covering for your floor",
       place: "Moscow region",
-      text: "Turnkey flooring: levelling the base, accurate cuts, and clean laminate or vinyl joints. A durable covering to German standards — from preparation to handover.",
+      text: "Turnkey flooring: levelling the base, accurate cuts, and clean laminate or vinyl joints. A durable covering to German standards — from preparation to handover",
     },
     city: {
       title: "Comfort and coziness",
       place: "Moscow",
-      text: "Turnkey walls: strip-out, filling, painter’s fleece, and even paint without visible transitions. Calm planes, clean edges, and the full cycle through to handover.",
+      text: "Turnkey walls: strip-out, filling, painter’s fleece, and even paint without visible transitions. Calm planes, clean edges, and the full cycle through to handover",
     },
     ostozhenka: {
       title: "Workspace",
       place: "Moscow",
-      text: "A turnkey office: filling, paint, doors, and frames to one quality standard. Quiet, clear lines, and a finished workspace from a single team.",
+      text: "A turnkey office: filling, paint, doors, and frames to one quality standard. Quiet, clear lines, and a finished workspace from a single team",
     },
     frunzenskaya: {
       title: "Comfort and coziness in the details",
       place: "Moscow",
-      text: "A turnkey bathroom: prepared niches, even walls, moisture-resistant finishes, and precise junctions. Comfort in the details — from the base to the finish, from one source.",
+      text: "A turnkey bathroom: prepared niches, even walls, moisture-resistant finishes, and precise junctions. Comfort in the details — from the base to the finish, from one source",
     },
   },
   marquee: [

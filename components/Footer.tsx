@@ -14,13 +14,13 @@ export function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
 
   return (
     <footer className="border-t border-line bg-ink">
-      <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 md:grid-cols-4 md:px-8">
-        <div className="md:col-span-2">
+      <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-5 py-16 md:grid-cols-4 md:gap-12 md:px-8">
+        <div className="col-span-2 flex flex-col items-center text-center md:items-start md:text-left">
           <Logo size="footer" href={localizedHref(lang, "/")} label={dict.logoHome} />
           <p className="mt-4 max-w-sm text-sm leading-7 text-mist">{dict.footer.blurb}</p>
         </div>
 
-        <div>
+        <div className="min-w-0">
           <p className="text-[11px] tracking-[0.28em] uppercase text-blue-bright">{dict.footer.nav}</p>
           <ul className="mt-5 space-y-3">
             {nav.map((item) => (
@@ -33,7 +33,7 @@ export function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
           </ul>
         </div>
 
-        <div>
+        <div className="min-w-0">
           <p className="text-[11px] tracking-[0.28em] uppercase text-blue-bright">
             {dict.nav.contact}
           </p>
@@ -44,7 +44,7 @@ export function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
               </a>
             </li>
             <li>
-              <a href={`mailto:${company.email}`} className="hover:text-ice">
+              <a href={`mailto:${company.email}`} className="break-words [overflow-wrap:anywhere] hover:text-ice">
                 {company.email}
               </a>
             </li>
@@ -63,7 +63,7 @@ export function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
       </div>
 
       <div className="border-t border-line">
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-6 text-[11px] tracking-[0.16em] uppercase text-mist/70 md:flex-row md:justify-between md:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col items-center gap-3 px-5 py-6 text-center text-[11px] tracking-[0.16em] uppercase text-mist/70 md:flex-row md:items-stretch md:justify-between md:px-8 md:text-left">
           <span>© {new Date().getFullYear()} Alphalux</span>
           <span>{dict.footer.line}</span>
         </div>

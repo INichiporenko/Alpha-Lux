@@ -51,6 +51,8 @@ export function ScrollToTop() {
       return;
     }
 
+    if (sessionStorage.getItem("alphalux-contact") === "1") return;
+
     if (!window.location.hash) {
       jumpTop();
     }
