@@ -7,7 +7,8 @@ import type { Dictionary } from "@/lib/dictionary";
 import { Reveal } from "@/components/Reveal";
 
 function photosOf(project: (typeof projects)[number]) {
-  return project.gallery.includes(project.image) ? [...project.gallery] : [project.image, ...project.gallery];
+  const gallery: string[] = [...project.gallery];
+  return gallery.includes(project.image) ? gallery : [project.image, ...gallery];
 }
 
 function Chevron({ dir }: { dir: "prev" | "next" }) {
