@@ -80,7 +80,7 @@ export function ContactSocials({ dict }: { dict: Dictionary }) {
           rel={item.href.startsWith("mailto:") ? undefined : "noreferrer"}
           aria-label={item.label}
           title={item.label}
-          className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-line text-ice transition duration-300 hover:border-blue-bright hover:text-blue-bright"
+          className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/15 text-snow transition duration-300 hover:border-blue-bright hover:text-blue-bright"
         >
           {item.icon}
         </a>

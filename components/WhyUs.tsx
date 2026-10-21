@@ -23,10 +23,10 @@ export function WhyUs({ dict }: { dict: Dictionary }) {
         <div className="mt-16 grid gap-4 overflow-visible pt-2 md:grid-cols-2 xl:grid-cols-4">
           {dict.reasons.map((item, i) => (
             <Reveal key={item.num} delay={i * 90} dir={i % 2 === 0 ? "up" : "scale"}>
-              <article className="card-3d h-full rounded-2xl border border-line bg-panel/70 p-7">
+              <article className="card-3d h-full rounded-2xl border border-white/10 bg-panel p-7">
                 <span className="font-display text-3xl text-blue-bright/80">{item.num}</span>
-                <h3 className="mt-8 font-display text-2xl text-ice">{item.title}</h3>
-                <p className="mt-4 text-sm leading-7 text-mist">{item.text}</p>
+                <h3 className="mt-8 font-display text-2xl text-snow">{item.title}</h3>
+                <p className="mt-4 text-sm leading-7 text-haze">{item.text}</p>
               </article>
             </Reveal>
           ))}

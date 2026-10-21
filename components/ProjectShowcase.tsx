@@ -82,7 +82,7 @@ export function ProjectShowcase({ dict }: { dict: Dictionary }) {
   }, [closeProject, current, goPhoto, photoIndex]);
 
   const arrowClass =
-    "absolute top-1/2 z-40 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-ice/35 bg-navy/55 text-ice backdrop-blur-sm transition hover:border-blue-bright hover:text-blue-bright";
+    "absolute top-1/2 z-40 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/40 bg-white/90 text-ice backdrop-blur-sm transition hover:border-blue hover:text-blue";
 
   return (
     <section className="bg-navy pb-24">
@@ -117,7 +117,7 @@ export function ProjectShowcase({ dict }: { dict: Dictionary }) {
                 <button
                   type="button"
                   onClick={() => setActive(project.id)}
-                  className="card-3d group flex h-full w-full flex-col overflow-hidden rounded-2xl border border-line bg-panel text-left"
+                  className="card-3d group flex h-full w-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-panel text-left"
                 >
                   <div className="img-zoom relative h-72 shrink-0">
                     <Image
@@ -127,16 +127,16 @@ export function ProjectShowcase({ dict }: { dict: Dictionary }) {
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, 33vw"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent" />
-                    <span className="absolute left-5 top-5 rounded-full border border-ice/20 bg-navy/50 px-3 py-1 text-[10px] tracking-[0.22em] uppercase text-ice backdrop-blur">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent" />
+                    <span className="absolute left-5 top-5 rounded-full border border-white/30 bg-black/40 px-3 py-1 text-[10px] tracking-[0.22em] uppercase text-white backdrop-blur">
                       {dict.filters[project.category]}
                     </span>
                   </div>
                   <div className="flex flex-1 flex-col p-6">
-                    <h3 className="font-display line-clamp-2 min-h-[2.5em] text-3xl leading-tight text-ice">
+                    <h3 className="font-display line-clamp-2 min-h-[2.5em] text-3xl leading-tight text-snow">
                       {copy.title}
                     </h3>
-                    <p className="mt-4 line-clamp-2 min-h-12 text-sm leading-6 text-mist">{copy.text}</p>
+                    <p className="mt-4 line-clamp-2 min-h-12 text-sm leading-6 text-haze">{copy.text}</p>
                   </div>
                 </button>
               </Reveal>
@@ -151,7 +151,7 @@ export function ProjectShowcase({ dict }: { dict: Dictionary }) {
           onClick={closeProject}
         >
           <article
-            className="relative max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-2xl border border-line bg-ink"
+            className="relative max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-2xl border border-white/10 bg-ink"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -177,10 +177,10 @@ export function ProjectShowcase({ dict }: { dict: Dictionary }) {
               <p className="text-[11px] tracking-[0.22em] uppercase text-blue-bright">
                 {dict.filters[current.category]}
               </p>
-              <h3 className="font-display mt-3 text-4xl text-ice md:text-5xl">
+              <h3 className="font-display mt-3 text-4xl text-snow md:text-5xl">
                 {dict.projects[current.id].title}
               </h3>
-              <p className="mt-6 max-w-2xl text-base leading-8 text-ice/85">
+              <p className="mt-6 max-w-2xl text-base leading-8 text-haze">
                 {dict.projects[current.id].text}
               </p>
               <div className="mt-8 grid gap-3 sm:grid-cols-2 md:grid-cols-3">

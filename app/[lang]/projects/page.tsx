@@ -46,10 +46,10 @@ export default async function ProjectsPage({ params }: { params: Promise<{ lang:
             <p className="text-[11px] tracking-[0.42em] uppercase text-blue-bright">
               {dict.projectsPage.ctaEyebrow}
             </p>
-            <h2 className="font-display mt-4 max-w-3xl text-4xl text-ice md:text-6xl">
+            <h2 className="font-display mt-4 max-w-3xl text-4xl text-snow md:text-6xl">
               {dict.projectsPage.ctaTitle}
             </h2>
-            <p className="mt-6 max-w-2xl text-base leading-8 text-mist">{dict.projectsPage.ctaText}</p>
+            <p className="mt-6 max-w-2xl text-base leading-8 text-haze">{dict.projectsPage.ctaText}</p>
             <Link
               href={localizedHref(lang, "/#contact")}
               className="btn-shine mt-10 inline-flex h-12 items-center rounded-full bg-blue px-8 text-[12px] tracking-[0.22em] uppercase text-white"

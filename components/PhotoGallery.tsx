@@ -7,7 +7,7 @@ import { Reveal } from "@/components/Reveal";
 
 export function PhotoGallery({ lang, dict }: { lang: Locale; dict: Dictionary }) {
   return (
-    <section className="bg-ink pt-8 pb-24 md:py-32">
+    <section className="bg-navy py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <Reveal>
@@ -49,12 +49,12 @@ export function PhotoGallery({ lang, dict }: { lang: Locale; dict: Dictionary })
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/10 to-transparent opacity-80 transition group-hover:opacity-100" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-80 transition group-hover:opacity-100" />
                   <div className="absolute bottom-6 left-6 translate-y-2 transition duration-500 group-hover:translate-y-0">
-                    <p className="text-[11px] tracking-[0.32em] uppercase text-blue-bright">
+                    <p className="text-[11px] tracking-[0.32em] uppercase text-[#4ea0e8]">
                       {dict.gallery.object}
                     </p>
-                    <p className="font-display mt-1 text-3xl text-ice">{label}</p>
+                    <p className="font-display mt-1 text-3xl text-white">{label}</p>
                   </div>
                 </Link>
               </Reveal>

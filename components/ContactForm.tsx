@@ -30,16 +30,16 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
   }
 
   return (
-    <section id="contact" className="scroll-mt-24 bg-navy py-24 md:py-32">
+    <section id="contact" className="scroll-mt-24 bg-ink py-24 md:py-32">
       <div className="mx-auto grid max-w-7xl gap-14 px-5 md:px-8 lg:grid-cols-2">
         <Reveal dir="left">
           <p className="text-[11px] tracking-[0.42em] uppercase text-blue-bright">
             {dict.contact.eyebrow}
           </p>
-          <h2 className="font-display mt-4 text-5xl text-ice md:text-6xl">{dict.contact.title}</h2>
-          <p className="mt-6 max-w-md text-base leading-8 text-mist">{dict.contact.text}</p>
+          <h2 className="font-display mt-4 text-5xl text-snow md:text-6xl">{dict.contact.title}</h2>
+          <p className="mt-6 max-w-md text-base leading-8 text-haze">{dict.contact.text}</p>
           <ContactSocials dict={dict} />
-          <div className="mt-10 space-y-4 text-lg leading-7 text-mist">
+          <div className="mt-10 space-y-4 text-lg leading-7 text-haze">
             <p>
               {dict.contact.person}: {company.contactPerson}
             </p>
@@ -57,28 +57,28 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
         </Reveal>
 
         <Reveal dir="right" delay={100}>
-          <form onSubmit={onSubmit} className="rounded-2xl border border-line bg-panel/60 p-6 md:p-10">
+          <form onSubmit={onSubmit} className="rounded-2xl border border-white/10 bg-panel/90 p-6 md:p-10">
             <div className="grid gap-6 md:grid-cols-2">
-              <label className="block text-[11px] tracking-[0.22em] uppercase text-mist">
+              <label className="block text-[11px] tracking-[0.22em] uppercase text-haze">
                 {dict.contact.name}
-                <input name="name" required className="field mt-2" placeholder={dict.contact.namePh} />
+                <input name="name" required className="field field-on-dark mt-2" placeholder={dict.contact.namePh} />
               </label>
-              <label className="block text-[11px] tracking-[0.22em] uppercase text-mist">
+              <label className="block text-[11px] tracking-[0.22em] uppercase text-haze">
                 {dict.contact.phone}
-                <input name="phone" required className="field mt-2" placeholder="+49" />
+                <input name="phone" required className="field field-on-dark mt-2" placeholder="+49" />
               </label>
             </div>
-            <label className="mt-6 block text-[11px] tracking-[0.22em] uppercase text-mist">
+            <label className="mt-6 block text-[11px] tracking-[0.22em] uppercase text-haze">
               {dict.contact.email}
-              <input name="email" type="email" className="field mt-2" placeholder="info@..." />
+              <input name="email" type="email" className="field field-on-dark mt-2" placeholder="info@..." />
             </label>
-            <label className="mt-6 block text-[11px] tracking-[0.22em] uppercase text-mist">
+            <label className="mt-6 block text-[11px] tracking-[0.22em] uppercase text-haze">
               {dict.contact.task}
               <textarea
                 name="message"
                 rows={4}
                 required
-                className="field mt-2 resize-none"
+                className="field field-on-dark mt-2 resize-none"
                 placeholder={dict.contact.taskPh}
               />
             </label>

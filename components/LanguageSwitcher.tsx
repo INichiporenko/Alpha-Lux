@@ -42,7 +42,7 @@ export function LanguageSwitcher({ lang, label }: { lang: Locale; label: string 
         aria-expanded={open}
         aria-haspopup="listbox"
         onClick={() => setOpen((value) => !value)}
-        className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap leading-none text-[11px] tracking-[0.14em] uppercase text-ice hover:text-white xl:text-[12px] xl:tracking-[0.18em]"
+        className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap leading-none text-[11px] tracking-[0.14em] uppercase text-snow hover:text-white xl:text-[12px] xl:tracking-[0.18em]"
       >
         <span>{localeLabels[lang]}</span>
         <svg
@@ -59,7 +59,7 @@ export function LanguageSwitcher({ lang, label }: { lang: Locale; label: string 
       <div
         role="listbox"
         aria-label={label}
-        className={`absolute right-0 top-[calc(100%+10px)] min-w-[4.25rem] overflow-hidden rounded-xl border border-line bg-navy/95 py-1 shadow-[0_16px_40px_rgba(0,0,0,0.35)] backdrop-blur-xl transition duration-200 ${
+        className={`absolute right-0 top-[calc(100%+10px)] min-w-[4.25rem] overflow-hidden rounded-xl border border-white/10 bg-ink/95 py-1 shadow-[0_16px_40px_rgba(0,0,0,0.35)] backdrop-blur-xl transition duration-200 ${
           open ? "visible translate-y-0 opacity-100" : "invisible -translate-y-1 opacity-0"
         }`}
       >
@@ -75,7 +75,7 @@ export function LanguageSwitcher({ lang, label }: { lang: Locale; label: string 
               setOpen(false);
             }}
             className={`block px-4 py-2.5 text-center text-[11px] tracking-[0.22em] uppercase transition ${
-              item === lang ? "bg-blue/20 text-ice" : "text-mist hover:bg-panel hover:text-ice"
+              item === lang ? "bg-blue/20 text-snow" : "text-haze hover:bg-panel hover:text-snow"
             }`}
           >
             {localeLabels[item]}

@@ -13,7 +13,7 @@ export function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
   ];
 
   return (
-    <footer className="border-t border-line bg-ink">
+    <footer className="border-t border-white/10 bg-ink">
       <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-5 py-16 md:grid-cols-4 md:gap-12 md:px-8">
         <div className="col-span-2 flex flex-col items-center text-center md:items-start md:text-left">
           <Logo size="footer" href={localizedHref(lang, "/")} label={dict.logoHome} />
@@ -37,24 +37,24 @@ export function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
           <p className="text-[11px] tracking-[0.28em] uppercase text-blue-bright">
             {dict.nav.contact}
           </p>
-          <ul className="mt-5 space-y-3 text-sm text-mist">
+          <ul className="mt-5 space-y-3 text-sm text-haze">
             <li>
-              <a href={company.phoneHref} className="hover:text-ice">
+              <a href={company.phoneHref} className="hover:text-snow">
                 {company.phone}
               </a>
             </li>
             <li>
-              <a href={`mailto:${company.email}`} className="break-words [overflow-wrap:anywhere] hover:text-ice">
+              <a href={`mailto:${company.email}`} className="break-words [overflow-wrap:anywhere] hover:text-snow">
                 {company.email}
               </a>
             </li>
             <li>
-              <a href={company.socials.whatsapp} target="_blank" rel="noreferrer" className="hover:text-ice">
+              <a href={company.socials.whatsapp} target="_blank" rel="noreferrer" className="hover:text-snow">
                 {dict.contact.social.whatsapp}
               </a>
             </li>
             <li>
-              <a href={company.socials.instagram} target="_blank" rel="noreferrer" className="hover:text-ice">
+              <a href={company.socials.instagram} target="_blank" rel="noreferrer" className="hover:text-snow">
                 {dict.contact.social.instagram}
               </a>
             </li>
@@ -62,8 +62,8 @@ export function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
         </div>
       </div>
 
-      <div className="border-t border-line">
-        <div className="mx-auto flex max-w-7xl flex-col items-center gap-3 px-5 py-6 text-center text-[11px] tracking-[0.16em] uppercase text-mist/70 md:flex-row md:items-stretch md:justify-between md:px-8 md:text-left">
+      <div className="border-t border-white/10">
+        <div className="mx-auto flex max-w-7xl flex-col items-center gap-3 px-5 py-6 text-center text-[11px] tracking-[0.16em] uppercase text-haze/70 md:flex-row md:items-stretch md:justify-between md:px-8 md:text-left">
           <span>© {new Date().getFullYear()} Alphalux</span>
           <span>{dict.footer.line}</span>
         </div>

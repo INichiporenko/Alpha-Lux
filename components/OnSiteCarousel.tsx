@@ -57,7 +57,7 @@ export function OnSiteCarousel({
   }, [paused, cycle]);
 
   const arrowClass =
-    "absolute top-1/2 z-40 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-ice/35 bg-navy/55 text-ice backdrop-blur-sm transition duration-300 hover:border-blue-bright hover:text-blue-bright md:h-12 md:w-12";
+    "absolute top-1/2 z-40 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/40 bg-white/90 text-ice backdrop-blur-sm transition duration-300 hover:border-blue hover:text-blue md:h-12 md:w-12";
 
   return (
     <div className="w-full" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>

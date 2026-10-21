@@ -16,20 +16,20 @@ export function ServicesPreview({ lang, dict }: { lang: Locale; dict: Dictionary
               <p className="text-[11px] tracking-[0.42em] uppercase text-blue-bright">
                 {dict.servicesHome.eyebrow}
               </p>
-              <h2 className="font-display mt-4 text-5xl leading-tight text-ice md:text-6xl">
+              <h2 className="font-display mt-4 text-5xl leading-tight text-snow md:text-6xl">
                 {dict.servicesHome.title}
               </h2>
-              <p className="mt-6 max-w-md text-base leading-8 text-mist">{dict.servicesHome.text}</p>
+              <p className="mt-6 max-w-md text-base leading-8 text-haze">{dict.servicesHome.text}</p>
             </Reveal>
 
             <div className="mt-10 grid gap-x-8 sm:grid-cols-2">
               {preview.map((service, i) => (
                 <Reveal key={service.title} delay={40 + i * 30}>
-                  <div className="flex gap-3 border-t border-line py-4">
+                  <div className="flex gap-3 border-t border-white/10 py-4">
                     <span className="shrink-0 text-[11px] tracking-[0.2em] text-blue-bright">
                       {String(i + 1).padStart(2, "0")}
                     </span>
-                    <p className="text-sm leading-6 text-ice/90">{service.title}</p>
+                    <p className="text-sm leading-6 text-snow/90">{service.title}</p>
                   </div>
                 </Reveal>
               ))}

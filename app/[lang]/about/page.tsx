@@ -65,15 +65,15 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
                 className="object-cover object-[center_70%]"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-navy/15" />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-black/10" />
             </div>
           </Reveal>
 
           <Reveal dir="right" delay={80}>
             <p className="text-[11px] tracking-[0.42em] uppercase text-blue-bright">{dict.about.activity}</p>
-            <h2 className="font-display mt-4 text-4xl text-ice md:text-6xl">{dict.about.activityTitle}</h2>
-            <p className="mt-7 text-base leading-8 text-mist">{dict.about.p1}</p>
-            <p className="mt-5 text-base leading-8 text-mist">{dict.about.p2}</p>
+            <h2 className="font-display mt-4 text-4xl text-snow md:text-6xl">{dict.about.activityTitle}</h2>
+            <p className="mt-7 text-base leading-8 text-haze">{dict.about.p1}</p>
+            <p className="mt-5 text-base leading-8 text-haze">{dict.about.p2}</p>
             <Link
               href={localizedHref(lang, "/services")}
               className="btn-shine mt-10 inline-flex h-12 items-center rounded-full bg-blue px-8 text-[12px] tracking-[0.22em] uppercase text-white"
@@ -107,12 +107,12 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <Reveal>
               <p className="text-[11px] tracking-[0.42em] uppercase text-blue-bright">{dict.about.onSite}</p>
-              <h2 className="font-display mt-4 text-4xl text-ice md:text-6xl">{dict.about.onSiteTitle}</h2>
+              <h2 className="font-display mt-4 text-4xl text-snow md:text-6xl">{dict.about.onSiteTitle}</h2>
             </Reveal>
             <Reveal delay={120}>
               <Link
                 href={localizedHref(lang, "/projects")}
-                className="link-underline text-[12px] tracking-[0.22em] uppercase text-ice"
+                className="link-underline text-[12px] tracking-[0.22em] uppercase text-snow"
               >
                 {dict.gallery.all}
               </Link>

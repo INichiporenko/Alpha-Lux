@@ -39,10 +39,10 @@ export default async function ServicesPage({ params }: { params: Promise<{ lang:
         </p>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 pb-24 md:px-8 md:pb-32">
-        <ServicesCatalog dict={dict} />
+      <ServicesCatalog dict={dict} />
 
-        <Reveal className="mt-16">
+      <section className="flex justify-center bg-navy px-5 py-16 md:py-20">
+        <Reveal>
           <Link
             href={localizedHref(lang, "/#contact")}
             className="btn-shine inline-flex h-12 items-center rounded-full bg-blue px-8 text-[12px] tracking-[0.22em] uppercase text-white"
