@@ -23,7 +23,7 @@ export const en: Dictionary = {
   },
   logoHome: "Alphalux — back to home",
   hero: {
-    eyebrow: "Renovation · Interior finishing",
+    eyebrow: "Renovation & interior finishing for apartments, houses and commercial spaces",
     title: ["Custom Interior Renovation", "From Rough Work to the Final Detail"],
     text: "Whether walls, flooring, doors, or full remodeling: AlphaLux handles all services from a single source. Forget coordination stress — with us, you have only one contact person managing everything",
     projects: "View projects",
@@ -38,25 +38,66 @@ export const en: Dictionary = {
   reasons: [
     {
       num: "01",
-      title: "Complete Service from a Single Source — Zero Coordination Stress",
-      text: "From demolition and drywall to painting and flooring, we combine all trades. You don’t need to search for different contractors. You have only one dedicated contact person managing the entire process from start to finish",
+      title: "First conversation",
+      text: "By phone, email or message we discuss your wishes, the planned scope and the desired timeframe. This gives us an initial overview of your project.",
     },
     {
       num: "02",
-      title: "From Scratch to the Final Finish",
-      text: "We cover the entire spectrum of interior renovation. Whether it's full home remodeling, kitchen and bath updates, acoustic panels, interior doors, or wall preparation — we handle your project from A to Z",
+      title: "Site visit & measurement",
+      text: "At an on-site appointment we inspect the rooms, check the existing substrates and take measurements. We discuss your ideas and advise you on materials and suitable solutions.",
     },
     {
       num: "03",
-      title: "High Qualification & Years of Experience",
-      text: "Our team consists of skilled professionals with deep expertise. Thanks to years of practical experience, we solve complex challenges cleanly, safely, and professionally",
+      title: "Detailed quote",
+      text: "You receive a clear quote with clearly described services, quantities and prices. This way you can see which work and materials are planned and what costs arise.",
     },
     {
       num: "04",
-      title: "Reliability & Uncompromising Quality",
-      text: "Punctuality, clean job sites, transparent communication, and top-tier craftsmanship are our standards. We deliver on time and tailored precisely to your expectations",
+      title: "Align together & commission",
+      text: "We go through the quote with you, answer your questions and take requested adjustments into account. After you commission us, we agree the dates and the process together.",
+    },
+    {
+      num: "05",
+      title: "Select & procure materials",
+      text: "We support you in choosing materials and, by arrangement, handle purchasing and delivery. If you prefer to source materials yourself, you receive an agreed material list with quantities and recommendations.",
+    },
+    {
+      num: "06",
+      title: "Professional execution",
+      text: "Our experienced craftsmen carry out the agreed work carefully. We coordinate our team, check quality and take responsibility for our staff’s work. We keep you informed of progress; changes and extra work are agreed with you in advance.",
+    },
+    {
+      num: "07",
+      title: "Removal & disposal",
+      text: "We take care of complete removal and proper disposal of construction waste from our work. This includes rubble, leftover materials and packaging.",
+    },
+    {
+      num: "08",
+      title: "Final cleaning & handover",
+      text: "To finish, we thoroughly clean the renovated areas. On a joint walkthrough we check the completed work and clarify any last questions — so you take over your rooms clean and can use them again right away.",
     },
   ],
+  advantages: {
+    title: "Your advantages with ALPHALUX",
+    items: [
+      {
+        title: "One dedicated contact",
+        text: "Personal support from the first enquiry to handover.",
+      },
+      {
+        title: "Transparent costs",
+        text: "A detailed quote and clear agreements on extra services.",
+      },
+      {
+        title: "Your wishes count",
+        text: "Direct exchange and joint decisions on everything that matters.",
+      },
+      {
+        title: "Well organised",
+        text: "We coordinate the agreed work, material deliveries, disposal and final cleaning.",
+      },
+    ],
+  },
   gallery: {
     eyebrow: "Projects",
     title: "Spaces we put together",

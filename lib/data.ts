@@ -21,8 +21,9 @@ export const unsplash = (id: string, w = 1600) =>
   `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
 
 export const images = {
-  hero: "/photos/hero/baustelle-wide.jpg",
-  heroFinished: "/photos/hero/wohnen-wide.jpg",
+  hero: "/photos/hero/hero-reference-living.jpg",
+  heroMobile: "/photos/hero/hero-mobile-living.jpg",
+  heroFinished: "/photos/hero/hero-reference-living.jpg",
   living: unsplash("photo-1600607687939-ce8a6c25118c"),
   kitchen: unsplash("photo-1556912173-46c336c7fd55"),
   bathroom: unsplash("photo-1600566753086-00f18fb6b3ea"),

@@ -6,64 +6,58 @@ import { localizedHref, type Locale } from "@/lib/i18n";
 
 export function Hero({ lang, dict }: { lang: Locale; dict: Dictionary }) {
   return (
-    <section className="relative h-[100svh] min-h-[640px] overflow-hidden">
+    <section className="relative min-h-[100svh] overflow-hidden bg-navy">
       <div className="hero-mask absolute inset-0">
-        <div className="ken-burns absolute inset-0">
-          <div className="absolute inset-0">
-            <Image
-              src={images.hero}
-              alt={dict.hero.imageAlt}
-              fill
-              priority
-              unoptimized
-              quality={95}
-              className="object-cover"
-              sizes="100vw"
-            />
-          </div>
-          <div className="hero-reveal-after absolute inset-0">
-            <Image
-              src={images.heroFinished}
-              alt=""
-              fill
-              priority
-              unoptimized
-              quality={95}
-              className="object-cover"
-              sizes="100vw"
-            />
-          </div>
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/10" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/10 to-transparent" />
+        <Image
+          src={images.heroMobile}
+          alt=""
+          fill
+          priority
+          unoptimized
+          className="object-cover object-[center_12%] desk:hidden"
+          sizes="100vw"
+        />
+        <Image
+          src={images.hero}
+          alt={dict.hero.imageAlt}
+          fill
+          priority
+          unoptimized
+          className="hidden object-cover object-[center_58%] desk:block"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 hidden bg-gradient-to-r from-navy from-0% via-navy/72 via-[30%] to-transparent desk:block" />
+        <div className="absolute inset-x-0 top-0 hidden h-32 bg-gradient-to-b from-navy/30 to-transparent desk:block" />
       </div>
 
-      <div className="relative z-10 mx-auto flex h-full w-full flex-col justify-end px-8 pb-20 pt-28 md:px-16 md:pb-24 lg:px-24">
-        <p className="hero-copy fade-up text-[11px] tracking-[0.42em] uppercase text-[#4ea0e8] md:text-[clamp(11px,0.7vw,14px)]">
-          {dict.hero.eyebrow}
-        </p>
-        <div className="line-grow mt-5 h-px w-24 bg-blue-bright/80" />
-        <h1 className="hero-title fade-up delay-1 font-display mt-8 font-semibold text-white">
-          {dict.hero.title[0]}
-          <br />
-          {dict.hero.title[1]}
-        </h1>
-        <p className="hero-lead fade-up delay-2 mt-7 text-white">
-          {dict.hero.text}
-        </p>
-        <div className="fade-up delay-3 mt-10 flex flex-wrap items-center gap-4">
-          <Link
-            href={localizedHref(lang, "/projects")}
-            className="btn-shine inline-flex h-12 items-center rounded-full bg-blue px-7 text-[12px] tracking-[0.22em] uppercase text-white"
-          >
-            {dict.hero.projects}
-          </Link>
-          <Link
-            href={localizedHref(lang, "/#contact")}
-            className="inline-flex h-12 items-center rounded-full border border-white/45 bg-black/20 px-7 text-[12px] tracking-[0.22em] uppercase text-white backdrop-blur-sm hover:border-blue-bright hover:text-blue-bright"
-          >
-            {dict.hero.consult}
-          </Link>
+      <div className="absolute left-0 top-0 z-10 px-5 pt-[5.75rem] desk:relative desk:flex desk:min-h-[100svh] desk:w-full desk:items-center desk:px-16 desk:pt-28 xl:px-24">
+        <div className="hero-copy-inner relative">
+          <div aria-hidden className="hero-copy-haze pointer-events-none absolute -inset-x-8 -inset-y-7 desk:hidden" />
+          <div className="relative flex flex-col items-start">
+            <p className="hero-copy fade-up max-w-[36rem] text-[10px] leading-relaxed tracking-[0.08em] text-mist desk:text-[12px] desk:tracking-[0.12em]">
+              {dict.hero.eyebrow}
+            </p>
+            <h1 className="hero-title fade-up delay-1 font-display mt-3 font-medium text-ice desk:mt-5">
+              {dict.hero.title[0]}
+              <br />
+              {dict.hero.title[1]}
+            </h1>
+            <p className="hero-lead fade-up delay-2 mt-3.5 text-mist desk:mt-5">{dict.hero.text}</p>
+            <div className="fade-up delay-3 mt-6 flex flex-col items-start gap-3 desk:mt-8 desk:flex-row desk:items-center desk:gap-7">
+              <Link
+                href={localizedHref(lang, "/#contact")}
+                className="btn-shine inline-flex h-11 items-center rounded-full bg-blue px-5 text-[11px] tracking-[0.16em] uppercase text-snow desk:h-12 desk:px-7 desk:text-[12px] desk:tracking-[0.18em]"
+              >
+                {dict.hero.consult}
+              </Link>
+              <Link
+                href={localizedHref(lang, "/projects")}
+                className="link-underline text-[13px] tracking-[0.04em] text-ice hover:text-blue"
+              >
+                {dict.hero.projects}
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -51,7 +51,7 @@ export function PhotoGallery({ lang, dict }: { lang: Locale; dict: Dictionary })
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-80 transition group-hover:opacity-100" />
                   <div className="absolute bottom-6 left-6 translate-y-2 transition duration-500 group-hover:translate-y-0">
-                    <p className="text-[11px] tracking-[0.32em] uppercase text-[#4ea0e8]">
+                    <p className="text-[11px] tracking-[0.32em] uppercase text-blue-bright">
                       {dict.gallery.object}
                     </p>
                     <p className="font-display mt-1 text-3xl text-white">{label}</p>

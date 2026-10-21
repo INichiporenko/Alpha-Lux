@@ -31,6 +31,29 @@ export function WhyUs({ dict }: { dict: Dictionary }) {
             </Reveal>
           ))}
         </div>
+
+        <div className="mt-24 border-t border-line pt-16 md:mt-28 md:pt-20">
+          <Reveal>
+            <h3 className="font-display max-w-3xl text-4xl leading-tight text-ice md:text-5xl">
+              {dict.advantages.title}
+            </h3>
+          </Reveal>
+          <ul className="mt-12 grid list-none gap-x-12 gap-y-10 md:grid-cols-2">
+            {dict.advantages.items.map((item, i) => (
+              <li key={item.title}>
+                <Reveal delay={80 + i * 70}>
+                  <div className="flex gap-4">
+                    <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue" />
+                    <div>
+                      <h4 className="font-display text-2xl text-ice">{item.title}</h4>
+                      <p className="mt-2 text-sm leading-7 text-mist">{item.text}</p>
+                    </div>
+                  </div>
+                </Reveal>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );

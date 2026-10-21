@@ -117,14 +117,14 @@ export function Header({ lang, dict }: { lang: Locale; dict: Dictionary }) {
       <header
         className={`fixed inset-x-0 top-0 z-50 overflow-visible transition-all duration-500 ${
           open
-            ? "border-b border-white/10 bg-ink"
+            ? "border-b border-line bg-navy"
             : scrolled || currentPath !== "/"
-              ? "border-b border-white/10 bg-ink/80 backdrop-blur-xl"
+              ? "border-b border-line bg-navy/90 backdrop-blur-xl"
               : "bg-transparent"
         }`}
       >
         <div className="mx-auto flex h-[84px] max-w-7xl items-center justify-between pl-5 pr-7 md:px-8 lg:px-10 xl:px-24">
-          <Logo size="header" href={localizedHref(lang, "/")} label={dict.logoHome} />
+          <Logo size="header" href={localizedHref(lang, "/")} label={dict.logoHome} className="logo-on-light" />
 
           <div className="hidden items-center lg:flex lg:flex-nowrap">
             <div className="flex flex-nowrap items-center">
@@ -135,7 +135,7 @@ export function Header({ lang, dict }: { lang: Locale; dict: Dictionary }) {
                     href={item.href}
                     onClick={() => closeNav(item)}
                     className={`link-underline whitespace-nowrap leading-none text-[11px] tracking-[0.14em] uppercase xl:text-[14px] xl:tracking-[0.2em] ${
-                      isActive(item) ? "is-active text-white" : "text-snow hover:text-white"
+                      isActive(item) ? "is-active text-ice" : "text-mist hover:text-ice"
                     }`}
                   >
                     {item.label}
@@ -146,7 +146,7 @@ export function Header({ lang, dict }: { lang: Locale; dict: Dictionary }) {
                 <LanguageSwitcher lang={lang} label={dict.header.language} />
                 <a
                   href={company.phoneHref}
-                  className="whitespace-nowrap leading-none text-[10px] tracking-[0.12em] text-snow hover:text-white xl:text-[12px] xl:tracking-[0.18em]"
+                  className="whitespace-nowrap leading-none text-[10px] tracking-[0.12em] text-mist hover:text-ice xl:text-[12px] xl:tracking-[0.18em]"
                 >
                   {company.phone}
                 </a>
@@ -155,7 +155,7 @@ export function Header({ lang, dict }: { lang: Locale; dict: Dictionary }) {
             <Link
               href={contactHref}
               onClick={goToContact}
-              className="btn-shine ml-5 inline-flex h-9 shrink-0 items-center whitespace-nowrap rounded-full bg-blue px-4 text-[10px] tracking-[0.16em] uppercase text-white xl:ml-8 xl:h-10 xl:px-6 xl:text-[12px] xl:tracking-[0.2em]"
+              className="btn-shine ml-5 inline-flex h-9 shrink-0 items-center whitespace-nowrap rounded-full bg-blue px-4 text-[10px] tracking-[0.16em] uppercase text-snow xl:ml-8 xl:h-10 xl:px-6 xl:text-[12px] xl:tracking-[0.2em]"
             >
               {dict.nav.contactCta}
             </Link>
@@ -173,17 +173,17 @@ export function Header({ lang, dict }: { lang: Locale; dict: Dictionary }) {
             >
               <span className="relative block h-3.5 w-5" aria-hidden>
                 <span
-                  className={`absolute left-0 h-px w-full bg-snow transition duration-300 ${
+                  className={`absolute left-0 h-px w-full bg-ice transition duration-300 ${
                     open ? "top-[7px] rotate-45" : "top-0"
                   }`}
                 />
                 <span
-                  className={`absolute left-0 top-[7px] h-px w-full bg-snow transition duration-300 ${
+                  className={`absolute left-0 top-[7px] h-px w-full bg-ice transition duration-300 ${
                     open ? "scale-x-0 opacity-0" : ""
                   }`}
                 />
                 <span
-                  className={`absolute left-0 h-px w-full bg-snow transition duration-300 ${
+                  className={`absolute left-0 h-px w-full bg-ice transition duration-300 ${
                     open ? "top-[7px] -rotate-45" : "top-3.5"
                   }`}
                 />
@@ -198,7 +198,7 @@ export function Header({ lang, dict }: { lang: Locale; dict: Dictionary }) {
         className={`fixed inset-0 z-40 lg:hidden ${open ? "visible" : "invisible pointer-events-none"}`}
       >
         <div
-          className={`absolute inset-0 bg-ink transition-opacity duration-500 ${
+          className={`absolute inset-0 bg-navy transition-opacity duration-500 ${
             open ? "opacity-100" : "opacity-0"
           }`}
         />
@@ -214,24 +214,24 @@ export function Header({ lang, dict }: { lang: Locale; dict: Dictionary }) {
                 href={item.href}
                 onClick={() => closeNav(item)}
                 className={`font-display py-2 text-4xl leading-tight sm:text-5xl ${
-                  isActive(item) ? "text-white" : "text-snow/80"
+                  isActive(item) ? "text-ice" : "text-mist"
                 }`}
               >
                 {item.label}
               </Link>
             ))}
           </div>
-          <div className="mt-8 flex flex-col gap-5 border-t border-white/10 pt-8">
+          <div className="mt-8 flex flex-col gap-5 border-t border-line pt-8">
             <Link
               href={contactHref}
               onClick={goToContact}
-              className="btn-shine inline-flex h-12 w-fit items-center rounded-full bg-blue px-8 text-[12px] tracking-[0.2em] uppercase text-white"
+              className="btn-shine inline-flex h-12 w-fit items-center rounded-full bg-blue px-8 text-[12px] tracking-[0.2em] uppercase text-snow"
             >
               {dict.nav.contactCta}
             </Link>
             <a
               href={company.phoneHref}
-              className="text-[12px] tracking-[0.18em] text-haze hover:text-snow"
+              className="text-[12px] tracking-[0.18em] text-mist hover:text-ice"
             >
               {company.phone}
             </a>

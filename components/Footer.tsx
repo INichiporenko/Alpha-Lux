@@ -16,8 +16,8 @@ export function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
     <footer className="border-t border-white/10 bg-ink">
       <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-5 py-16 md:grid-cols-4 md:gap-12 md:px-8">
         <div className="col-span-2 flex flex-col items-center text-center md:items-start md:text-left">
-          <Logo size="footer" href={localizedHref(lang, "/")} label={dict.logoHome} />
-          <p className="mt-4 max-w-sm text-sm leading-7 text-mist">{dict.footer.blurb}</p>
+          <Logo size="footer" href={localizedHref(lang, "/")} label={dict.logoHome} className="logo-on-dark" />
+          <p className="mt-4 max-w-sm text-sm leading-7 text-haze">{dict.footer.blurb}</p>
         </div>
 
         <div className="min-w-0">
@@ -25,7 +25,7 @@ export function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
           <ul className="mt-5 space-y-3">
             {nav.map((item) => (
               <li key={item.label}>
-                <Link href={item.href} className="text-sm text-mist hover:text-ice">
+                <Link href={item.href} className="text-sm text-haze hover:text-snow">
                   {item.label}
                 </Link>
               </li>

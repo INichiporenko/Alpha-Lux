@@ -21,7 +21,7 @@ export const de = {
   },
   logoHome: "Alphalux — zur Startseite",
   hero: {
-    eyebrow: "Renovierung · Innenausbau",
+    eyebrow: "Renovierung & Innenausbau für Wohnungen, Häuser und Gewerberäume",
     title: ["Innenausbau & Renovierung nach Maß", "Vom Rohbau bis zum letzten Feinschliff"],
     text: "Ob Wände, Böden, Türen oder kompletter Umbau: AlphaLux übernimmt sämtliche Arbeiten aus einer Hand. Vergessen Sie den Koordinationsaufwand – bei uns haben Sie nur einen Ansprechpartner, der alles regelt",
     projects: "Projekte ansehen",
@@ -36,25 +36,66 @@ export const de = {
   reasons: [
     {
       num: "01",
-      title: "Alles aus einer Hand — Kein Koordinationsstress",
-      text: "Ob Abriss, Trockenbau, Malerarbeiten oder Bodenbeläge: Wir bündeln alle Gewerke. Sie müssen nicht für jede Aufgabe einen anderen Handwerker suchen. Sie haben von Anfang bis Ende nur einen festen Ansprechpartner, der alles regelt",
+      title: "Erstes Gespräch",
+      text: "Per Telefon, E-Mail oder Nachricht besprechen wir Ihre Wünsche, den geplanten Umfang und den gewünschten Zeitraum. So erhalten wir einen ersten Überblick über Ihr Vorhaben.",
     },
     {
       num: "02",
-      title: "Umfassender Service vom Rohbau bis zum Feinschliff",
-      text: "Wir decken das gesamte Spektrum des Innenausbaus ab. Von der Wohnungssanierung über Küchen- und Badrenovierung bis hin zu Akustikpaneelen, Türen und präzisen Spachtelarbeiten – wir realisieren Ihr Projekt von A bis Z",
+      title: "Besichtigung & Aufmaß",
+      text: "Bei einem gemeinsamen Termin vor Ort besichtigen wir die Räume, prüfen die vorhandenen Untergründe und nehmen Maß. Wir besprechen Ihre Vorstellungen und beraten Sie zu Materialien und passenden Lösungen.",
     },
     {
       num: "03",
-      title: "Hohe Qualifikation & jahrelange Erfahrung",
-      text: "Unser Team besteht aus ausgebildeten Fachkräften mit tiefem Know-how. Dank langjähriger Praxiserfahrung lösen wir auch komplexe Herausforderungen sauber, sicher und normgerecht",
+      title: "Detailliertes Angebot",
+      text: "Sie erhalten ein übersichtliches Angebot mit klar beschriebenen Leistungen, Mengen und Preisen. So können Sie nachvollziehen, welche Arbeiten und Materialien vorgesehen sind und welche Kosten entstehen.",
     },
     {
       num: "04",
-      title: "Deutsche Handwerksqualität & absolute Zuverlässigkeit",
-      text: "Pünktlichkeit, saubere Baustellen, transparente Absprachen und höchste Präzision sind für uns selbstverständlich. Wir arbeiten termingerecht und exakt nach Ihren Wünschen",
+      title: "Gemeinsam abstimmen & beauftragen",
+      text: "Wir gehen das Angebot mit Ihnen durch, beantworten Ihre Fragen und berücksichtigen gewünschte Anpassungen. Nach Ihrer Beauftragung stimmen wir die Termine und den Ablauf gemeinsam ab.",
+    },
+    {
+      num: "05",
+      title: "Materialien auswählen & beschaffen",
+      text: "Wir unterstützen Sie bei der Materialauswahl und übernehmen nach Absprache Einkauf und Lieferung. Möchten Sie Materialien selbst besorgen, erhalten Sie von uns eine abgestimmte Materialliste mit Mengen und Empfehlungen.",
+    },
+    {
+      num: "06",
+      title: "Fachgerechte Ausführung",
+      text: "Unsere erfahrenen Handwerker führen die vereinbarten Arbeiten sorgfältig aus. Wir koordinieren unser Team, prüfen die Qualität und übernehmen Verantwortung für die Arbeit unserer Mitarbeiter. Über den Fortschritt halten wir Sie auf dem Laufenden; Änderungen und Zusatzarbeiten stimmen wir vorab mit Ihnen ab.",
+    },
+    {
+      num: "07",
+      title: "Abtransport & Entsorgung",
+      text: "Wir kümmern uns um den vollständigen Abtransport und die fachgerechte Entsorgung der bei unseren Arbeiten anfallenden Bauabfälle. Dazu gehören Bauschutt, Materialreste und Verpackungen.",
+    },
+    {
+      num: "08",
+      title: "Endreinigung & gemeinsame Übergabe",
+      text: "Zum Abschluss reinigen wir die renovierten Bereiche gründlich. Bei einem gemeinsamen Rundgang prüfen wir die ausgeführten Arbeiten und klären letzte Fragen – damit Sie Ihre Räume sauber übernehmen und direkt wieder nutzen können.",
     },
   ],
+  advantages: {
+    title: "Ihre Vorteile mit ALPHALUX",
+    items: [
+      {
+        title: "Ein fester Ansprechpartner",
+        text: "Persönliche Betreuung von der ersten Anfrage bis zur Übergabe.",
+      },
+      {
+        title: "Nachvollziehbare Kosten",
+        text: "Ein detailliertes Angebot und klare Absprachen zu zusätzlichen Leistungen.",
+      },
+      {
+        title: "Ihre Wünsche zählen",
+        text: "Direkter Austausch und gemeinsame Abstimmung bei allen wichtigen Entscheidungen.",
+      },
+      {
+        title: "Gut organisiert",
+        text: "Wir koordinieren die vereinbarten Arbeiten, Materiallieferungen, Entsorgung und Endreinigung.",
+      },
+    ],
+  },
   gallery: {
     eyebrow: "Projekte",
     title: "Räume, die wir bauen",
