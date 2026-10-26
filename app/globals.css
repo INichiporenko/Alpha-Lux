@@ -209,8 +209,31 @@ body {
   animation: heroIn 1.6s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
+.hero-copy-wrap {
+  display: grid;
+  min-height: 100svh;
+  grid-template-rows: minmax(5.75rem, auto) auto minmax(2.5rem, 1fr);
+  padding: 0 1.25rem;
+  box-sizing: border-box;
+}
+
 .hero-copy-inner {
+  grid-row: 2;
   width: min(100%, 34rem);
+  min-width: 0;
+}
+
+@media (min-width: 501px) {
+  .hero-copy-wrap {
+    grid-template-rows: minmax(7rem, 1fr) auto minmax(4.5rem, 1fr);
+    padding: 0 4rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-copy-wrap {
+    padding: 0 6rem;
+  }
 }
 
 .hero-title {

@@ -6,8 +6,8 @@ import { localizedHref, type Locale } from "@/lib/i18n";
 
 export function Hero({ lang, dict }: { lang: Locale; dict: Dictionary }) {
   return (
-    <section className="relative min-h-[100svh] overflow-hidden bg-navy">
-      <div className="hero-mask absolute inset-0">
+    <section className="hero relative min-h-[100svh] bg-navy">
+      <div className="hero-mask absolute inset-0 overflow-hidden">
         <Image
           src={images.heroMobile}
           alt=""
@@ -30,7 +30,7 @@ export function Hero({ lang, dict }: { lang: Locale; dict: Dictionary }) {
         <div className="absolute inset-x-0 top-0 hidden h-32 bg-gradient-to-b from-navy/30 to-transparent desk:block" />
       </div>
 
-      <div className="absolute left-0 top-0 z-10 px-5 pt-[5.75rem] desk:relative desk:flex desk:min-h-[100svh] desk:w-full desk:items-center desk:px-16 desk:pt-28 xl:px-24">
+      <div className="hero-copy-wrap relative z-10">
         <div className="hero-copy-inner relative">
           <div aria-hidden className="hero-copy-haze pointer-events-none absolute -inset-x-8 -inset-y-7 desk:hidden" />
           <div className="relative flex flex-col items-start">
