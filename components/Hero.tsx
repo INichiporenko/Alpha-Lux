@@ -52,7 +52,7 @@ export function Hero({ lang, dict }: { lang: Locale; dict: Dictionary }) {
               </Link>
               <Link
                 href={localizedHref(lang, "/projects")}
-                className="link-underline text-[13px] tracking-[0.04em] text-ice hover:text-blue"
+                className="hero-projects-btn inline-flex h-11 items-center rounded-full px-5 text-[11px] tracking-[0.16em] uppercase text-ice desk:h-auto desk:rounded-none desk:bg-transparent desk:px-0 desk:text-[13px] desk:tracking-[0.04em] desk:normal-case desk:backdrop-blur-none"
               >
                 {dict.hero.projects}
               </Link>

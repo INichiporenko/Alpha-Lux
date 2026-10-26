@@ -405,6 +405,82 @@ body {
   transform-origin: left;
 }
 
+.hero-projects-btn {
+  position: relative;
+  overflow: hidden;
+  background: rgba(244, 239, 230, 0.68);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(244, 239, 230, 0.85);
+  transition:
+    background-color 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.hero-projects-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 20%, rgba(255, 255, 255, 0.42) 50%, transparent 80%);
+  transform: translateX(-120%);
+  transition: transform 0.7s ease;
+  pointer-events: none;
+}
+
+.hero-projects-btn:hover,
+.hero-projects-btn:active {
+  background: rgba(244, 239, 230, 0.9);
+  border-color: rgba(244, 239, 230, 1);
+}
+
+.hero-projects-btn:hover::before,
+.hero-projects-btn:active::before {
+  transform: translateX(120%);
+}
+
+@media (min-width: 501px) {
+  .hero-projects-btn {
+    position: relative;
+    overflow: visible;
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: none;
+  }
+
+  .hero-projects-btn::before {
+    content: none;
+  }
+
+  .hero-projects-btn:hover,
+  .hero-projects-btn:active {
+    background: transparent;
+    border-color: transparent;
+  }
+
+  .hero-projects-btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .hero-projects-btn:hover {
+    color: var(--color-blue);
+  }
+
+  .hero-projects-btn:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
 .btn-shine {
   position: relative;
   overflow: hidden;
