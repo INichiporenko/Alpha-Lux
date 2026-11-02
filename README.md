@@ -42,3 +42,19 @@ npm run dev
 2. У [vercel.com](https://vercel.com) — **Add New → Project**, оберіть репозиторій.
 3. Framework Preset: **Next.js**. Команди за замовчуванням не змінювати.
 4. Deploy.
+
+### Kontaktformular (E-Mail)
+
+Anfragen gehen an **info@alphalux-innenausbau.de** über [Resend](https://resend.com).
+
+1. Konto auf [resend.com](https://resend.com) anlegen und API-Key kopieren.
+2. Lokal: Datei `.env.local` anlegen:
+
+```
+RESEND_API_KEY=re_xxxxxxxx
+CONTACT_TO=info@alphalux-innenausbau.de
+CONTACT_FROM="Alphalux <info@alphalux-innenausbau.de>"
+```
+
+3. Auf Vercel dieselben Variablen unter **Project → Settings → Environment Variables** setzen und neu deployen.
+4. Domain `alphalux-innenausbau.de` in Resend ist verifiziert; `CONTACT_FROM` verwendet `info@alphalux-innenausbau.de`.

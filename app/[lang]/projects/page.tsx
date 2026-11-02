@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ProcessCarousel } from "@/components/ProcessCarousel";
 import { ProjectShowcase } from "@/components/ProjectShowcase";
 import { Reveal } from "@/components/Reveal";
 import { getDictionary } from "@/lib/dictionary";
@@ -56,6 +57,26 @@ export default async function ProjectsPage({ params }: { params: Promise<{ lang:
             >
               {dict.projectsPage.cta}
             </Link>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="bg-navy py-24 md:py-32">
+        <div className="mx-auto max-w-7xl px-5 md:px-8">
+          <Reveal>
+            <p className="text-[11px] tracking-[0.42em] uppercase text-blue-bright">
+              {dict.projectsPage.processEyebrow}
+            </p>
+            <h2 className="font-display mt-4 max-w-3xl text-4xl text-ice md:text-6xl">
+              {dict.projectsPage.processTitle}
+            </h2>
+          </Reveal>
+          <Reveal className="mt-12">
+            <ProcessCarousel
+              alt={dict.projectsPage.processAlt}
+              prevLabel={dict.projectsPage.prev}
+              nextLabel={dict.projectsPage.next}
+            />
           </Reveal>
         </div>
       </section>

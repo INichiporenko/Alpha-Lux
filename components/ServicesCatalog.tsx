@@ -38,12 +38,18 @@ export function ServicesCatalog({ dict }: { dict: Dictionary }) {
               </div>
 
               <div className={textLeft ? "lg:order-2" : "lg:order-1"}>
-                <div className="img-zoom relative h-[260px] overflow-hidden rounded-2xl md:h-[380px]">
+                <div
+                  className={`img-zoom relative overflow-hidden rounded-2xl ${
+                    photo.endsWith("/wand.jpg")
+                      ? "h-[340px] bg-black/20 md:h-[480px]"
+                      : "h-[260px] md:h-[380px]"
+                  }`}
+                >
                   <Image
                     src={photo}
                     alt={service.title}
                     fill
-                    className="object-cover"
+                    className={photo.endsWith("/wand.jpg") ? "object-contain" : "object-cover"}
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-black/10" />

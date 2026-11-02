@@ -62,29 +62,29 @@ export function OnSiteCarousel({
   return (
     <div className="w-full" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
       <div className="relative aspect-[2640/1173] w-full">
-        {onSitePhotos.map((src, i) => (
+        {onSitePhotos.map((slide, i) => (
           <div
-            key={src}
+            key={`${slide.before}-${slide.after}-${i}`}
             className={`absolute inset-0 grid grid-cols-2 gap-2 md:gap-3 ${
               i === current ? "z-20 opacity-100" : i === previous ? "z-10 opacity-100" : "z-0 opacity-0"
             } transition-opacity duration-700 ease-out`}
           >
             <div className="relative overflow-hidden rounded-2xl">
               <Image
-                src={src}
+                src={slide.before}
                 alt={i === current ? alt : ""}
                 fill
-                className="object-cover object-top"
+                className="object-cover"
                 sizes="(max-width: 768px) 50vw, 640px"
                 priority={i === 0}
               />
             </div>
             <div className="relative overflow-hidden rounded-2xl">
               <Image
-                src={src}
+                src={slide.after}
                 alt=""
                 fill
-                className="object-cover object-bottom"
+                className="object-cover"
                 sizes="(max-width: 768px) 50vw, 640px"
                 priority={i === 0}
               />
@@ -101,9 +101,9 @@ export function OnSiteCarousel({
       </div>
 
       <div className="mt-5 flex justify-center gap-2.5">
-        {onSitePhotos.map((src, i) => (
+        {onSitePhotos.map((slide, i) => (
           <button
-            key={src}
+            key={`${slide.before}-${slide.after}-dot-${i}`}
             type="button"
             aria-label={`${i + 1}`}
             aria-current={i === current ? "true" : undefined}

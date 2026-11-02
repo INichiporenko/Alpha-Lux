@@ -203,12 +203,8 @@ export const de = {
       text: "Wärmedämmung und Schallschutz von Trockenbaukonstruktionen — ruhiger und angenehmer im Alltag",
     },
     {
-      title: "Spachteln von Wänden und Decken",
-      text: "Spachteln von Wänden und Decken. Ebene, ruhige Flächen als Grundlage für Anstrich oder Belag",
-    },
-    {
-      title: "Malervlies und professionelles Streichen",
-      text: "Aufkleben von Malervlies und professionelles Streichen — gleichmäßige, langlebige Oberflächen",
+      title: "Renovierung von Wänden und Decken",
+      text: "Spachteln, Malervlies und professionelles Streichen — vom Nullzustand bis zum idealen Erscheinungsbild",
     },
     {
       title: "Vorbereitung und Ausgleich des Bodens",
@@ -229,6 +225,10 @@ export const de = {
     {
       title: "Montage und Austausch von Innentüren und Zargen",
       text: "Montage und Austausch von Innentüren und Zargen. Passgenau, ruhig im Gang, sauber im Anschluss",
+    },
+    {
+      title: "Renovierung von Treppen",
+      text: "Feinbearbeitung im Bestand: Oberflächen, Anschlüsse und ein ruhiges Bild zur Treppe — vom ersten Auftritt bis zum letzten Schliff",
     },
   ],
   servicesHome: {
@@ -289,6 +289,11 @@ export const de = {
     ctaText:
       "Erzählen Sie uns von Wohnung, Haus oder Büro. Wir erstellen ein Angebot und setzen die Arbeiten schlüsselfertig um — alles aus einer Hand",
     cta: "Beratung anfragen",
+    processEyebrow: "Baustelle",
+    processTitle: "In der Arbeit",
+    processAlt: "Alphalux während der Arbeiten",
+    prev: "Vorheriges Foto",
+    next: "Nächstes Foto",
   },
   filters: {
     all: "Alle",
@@ -297,6 +302,7 @@ export const de = {
     office: "Büro",
     floor: "Boden",
     walls: "Wände",
+    railings: "Treppen",
   },
   projects: {
     patriarshi: {
@@ -324,14 +330,19 @@ export const de = {
       place: "Moskau",
       text: "Bad schlüsselfertig: Nischen vorbereiten, ebene Wände, feuchtefeste Beläge und präzise Anschlüsse. Komfort im Detail — von der Basis bis zum Finish aus einer Hand",
     },
+    gelander: {
+      title: "Treppen",
+      place: "Deutschland",
+      text: "Wir bringen Ihre Treppen zum idealen Erscheinungsbild",
+    },
   },
   marquee: [
     "Wohnungsrenovierung",
+    "Altbausanierung",
+    "Wände und Decken renovieren",
     "Bad & Küche",
     "Trockenbau",
     "Schall- & Wärmeschutz",
-    "Maler- & Tapezierarbeiten",
-    "Spachteltechnik",
     "Bodenbeläge (Vinyl, Laminat)",
     "Akustikpaneele",
     "Innentüren",

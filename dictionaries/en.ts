@@ -204,12 +204,8 @@ export const en: Dictionary = {
       text: "Thermal insulation and soundproofing of drywall constructions — quieter and more comfortable day to day",
     },
     {
-      title: "Filling walls and ceilings",
-      text: "Filling walls and ceilings. Even, calm planes as the base for paint or covering",
-    },
-    {
-      title: "Painter’s fleece and professional painting",
-      text: "Hanging painter’s fleece and professional painting — even, durable surfaces",
+      title: "Wall and ceiling renovation",
+      text: "Filling, painter’s fleece and professional painting — from scratch to a perfect finish",
     },
     {
       title: "Floor preparation and levelling",
@@ -230,6 +226,10 @@ export const en: Dictionary = {
     {
       title: "Interior doors and frames",
       text: "Installation and replacement of interior doors and frames. Accurate fit, quiet swing, clean junction",
+    },
+    {
+      title: "Stair renovation",
+      text: "Fine finishing in place: surfaces, junctions, and a calm line along the stairs — from the first step to the last detail",
     },
   ],
   servicesHome: {
@@ -290,6 +290,11 @@ export const en: Dictionary = {
     ctaText:
       "Tell us about your apartment, house, or office. We’ll prepare an estimate and deliver the work turnkey — all from one team",
     cta: "Book a consultation",
+    processEyebrow: "On site",
+    processTitle: "Work in progress",
+    processAlt: "Alphalux at work",
+    prev: "Previous photo",
+    next: "Next photo",
   },
   filters: {
     all: "All",
@@ -298,6 +303,7 @@ export const en: Dictionary = {
     office: "Office",
     floor: "Floor",
     walls: "Walls",
+    railings: "Stairs",
   },
   projects: {
     patriarshi: {
@@ -325,13 +331,19 @@ export const en: Dictionary = {
       place: "Moscow",
       text: "A turnkey bathroom: prepared niches, even walls, moisture-resistant finishes, and precise junctions. Comfort in the details — from the base to the finish, from one source",
     },
+    gelander: {
+      title: "Stairs",
+      place: "Germany",
+      text: "We’ll bring your stairs to a perfect look",
+    },
   },
   marquee: [
     "Home Renovation",
+    "Old Building Renovation",
+    "Walls and Ceilings",
     "Kitchen & Bathroom",
     "Drywall Solutions",
     "Insulation & Soundproofing",
-    "Painting & Wallpapering",
     "Flooring & Vinyl",
     "Acoustic Panels",
     "Interior Doors",

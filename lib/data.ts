@@ -35,7 +35,7 @@ export const images = {
   hallway: unsplash("photo-1600489000022-c2086d310d13"),
   facade: unsplash("photo-1600047509807-ba8f99d2cdbc"),
   detail: unsplash("photo-1600210491892-03d54c0aaf87"),
-  process: "/photos/content/about-team-v7.jpg",
+  process: "/photos/content/about-team-000e.jpg",
   aboutActivity: "/photos/content/9b.jpg",
   materials: unsplash("photo-1615874959474-d453339d4d56"),
 };
@@ -49,10 +49,66 @@ export const servicesSlideshow = [
 ] as const;
 
 export const onSitePhotos = [
-  "/photos/content/before-after-01.jpg",
-  "/photos/content/before-after-02.jpg",
-  "/photos/content/before-after-03.jpg",
-  "/photos/content/before-after-04b.jpg",
+  {
+    before: "/photos/content/ba-01-before.jpg",
+    after: "/photos/content/ba-01-after.jpg",
+    composite: false,
+  },
+  {
+    before: "/photos/content/ba-02-before.jpg",
+    after: "/photos/content/ba-02-after.jpg",
+    composite: false,
+  },
+  {
+    before: "/photos/content/ba-03-before.jpg",
+    after: "/photos/content/ba-03-after.jpg",
+    composite: false,
+  },
+  {
+    before: "/photos/content/ba-04-before.jpg",
+    after: "/photos/content/ba-04-after.jpg",
+    composite: false,
+  },
+  {
+    before: "/photos/content/onsite-before-01.jpg",
+    after: "/photos/content/raume8c.jpg",
+    composite: false,
+  },
+  {
+    before: "/photos/content/onsite-before-02.jpg",
+    after: "/photos/content/raum1b.jpg",
+    composite: false,
+  },
+  {
+    before: "/photos/content/onsite-before-03.jpg",
+    after: "/photos/content/raum5.jpg",
+    composite: false,
+  },
+  {
+    before: "/photos/content/onsite-before-04.jpg",
+    after: "/photos/content/onsite-after-04.jpg",
+    composite: false,
+  },
+] as const;
+
+export const processPhotos = [
+  { src: "/photos/content/onsite-before-04.jpg" },
+  { src: "/photos/content/onsite-before-02.jpg" },
+  { src: "/photos/content/process-dodaty.jpg" },
+  { src: "/photos/content/hero-content.jpg" },
+  { src: "/photos/content/process-4054.jpg" },
+  { src: "/photos/content/img4262.jpg" },
+  {
+    src: "/photos/content/process-4450.mp4",
+    video: true,
+    poster: "/photos/content/process-4450-poster.jpg",
+  },
+  { src: "/photos/content/process-4507.jpg" },
+  { src: "/photos/content/process-5476.jpg" },
+  { src: "/photos/content/process-5481.jpg" },
+  { src: "/photos/content/process-7508.jpg" },
+  { src: "/photos/content/process-9174.jpg" },
+  { src: "/photos/content/img5486.jpg" },
 ] as const;
 
 export const servicePhotos = [
@@ -62,12 +118,12 @@ export const servicePhotos = [
   "/photos/content/wand3.jpg",
   "/photos/content/img4262.jpg",
   "/photos/content/raum3.jpg",
-  "/photos/content/img5486.jpg",
   "/photos/content/img1250.jpg",
-  "/photos/content/boden6.jpg",
+  "/photos/content/boden6b.jpg",
   "/photos/content/img9228.jpg",
-  "/photos/content/14b.jpg",
-  "/photos/content/raum2.jpg",
+  "/photos/content/wand-neu20.jpg",
+  "/photos/content/wand.jpg",
+  "/photos/content/gelander1.jpg",
 ] as const;
 
 export const galleryLayout = [
@@ -78,7 +134,7 @@ export const galleryLayout = [
   { key: "living", src: "/photos/content/raume8b.jpg", span: "md" },
 ] as const;
 
-export type ProjectCategoryId = "kitchen" | "bathroom" | "office" | "floor" | "walls";
+export type ProjectCategoryId = "kitchen" | "bathroom" | "office" | "floor" | "walls" | "railings";
 export type ProjectFilterId = "all" | ProjectCategoryId;
 
 export const projectFilters: ProjectFilterId[] = [
@@ -88,6 +144,7 @@ export const projectFilters: ProjectFilterId[] = [
   "office",
   "floor",
   "walls",
+  "railings",
 ];
 
 export const projects = [
@@ -103,6 +160,8 @@ export const projects = [
       "/photos/content/img5186b.jpg",
       "/photos/content/kuche2b.jpg",
       "/photos/content/wand3.jpg",
+      "/photos/content/kuche-neu08b.jpg",
+      "/photos/content/kuche-neu09b.jpg",
     ],
   },
   {
@@ -110,8 +169,9 @@ export const projects = [
     year: "2024",
     area: "420 m²",
     category: "floor" as const,
-    image: "/photos/content/boden6.jpg",
+    image: "/photos/content/raum4b.jpg",
     gallery: [
+      "/photos/content/raum4b.jpg",
       "/photos/content/boden6.jpg",
       "/photos/content/9b.jpg",
       "/photos/content/14b.jpg",
@@ -119,6 +179,7 @@ export const projects = [
       "/photos/content/boden5.jpg",
       "/photos/content/boden7.jpg",
       "/photos/content/boden8.jpg",
+      "/photos/content/boden9.jpg",
       "/photos/content/img0996.jpg",
       "/photos/content/img7641b.jpg",
       "/photos/content/img9195b.jpg",
@@ -128,12 +189,21 @@ export const projects = [
       "/photos/content/off6b.jpg",
       "/photos/content/off7b.jpg",
       "/photos/content/raum1b.jpg",
-      "/photos/content/raum4b.jpg",
       "/photos/content/raume6.jpg",
       "/photos/content/raume8c.jpg",
       "/photos/content/wand4.jpg",
       "/photos/content/wand6.jpg",
       "/photos/content/wand7.jpg",
+      "/photos/content/boden-neu07b.jpg",
+      "/photos/content/boden-neu08.jpg",
+      "/photos/content/boden-neu09.jpg",
+      "/photos/content/boden-neu10.jpg",
+      "/photos/content/boden-neu11b.jpg",
+      "/photos/content/boden-neu12b.jpg",
+      "/photos/content/boden-neu13.jpg",
+      "/photos/content/boden-neu14b.jpg",
+      "/photos/content/boden-neu15.jpg",
+      "/photos/content/boden-neu16b.jpg",
     ],
   },
   {
@@ -165,6 +235,22 @@ export const projects = [
       "/photos/content/raum5.jpg",
       "/photos/content/wand4.jpg",
       "/photos/content/img9228.jpg",
+      "/photos/content/boden-neu07b.jpg",
+      "/photos/content/boden-neu10.jpg",
+      "/photos/content/boden-neu13.jpg",
+      "/photos/content/boden-neu16b.jpg",
+      "/photos/content/wand-neu17.jpg",
+      "/photos/content/wand-neu18.jpg",
+      "/photos/content/wand-neu19.jpg",
+      "/photos/content/wand-neu20.jpg",
+      "/photos/content/wand-neu21.jpg",
+      "/photos/content/wand-neu22c.jpg",
+      "/photos/content/wand-neu23b.jpg",
+      "/photos/content/wand-neu24.jpg",
+      "/photos/content/wand-neu25b.jpg",
+      "/photos/content/wand-neu26b.jpg",
+      "/photos/content/wand-neu27b.jpg",
+      "/photos/content/wand-neu28.jpg",
     ],
   },
   {
@@ -197,6 +283,21 @@ export const projects = [
       "/photos/content/bade4.jpg",
       "/photos/content/bade2.jpg",
       "/photos/content/raum6.jpg",
+    ],
+  },
+  {
+    id: "gelander",
+    year: "2025",
+    area: "—",
+    category: "railings" as const,
+    image: "/photos/content/gelander1.jpg",
+    gallery: [
+      "/photos/content/gelander01.jpg",
+      "/photos/content/gelander02b.jpg",
+      "/photos/content/gelander03.jpg",
+      "/photos/content/gelander04.jpg",
+      "/photos/content/gelander05.jpg",
+      "/photos/content/gelander06.jpg",
     ],
   },
 ] as const;
