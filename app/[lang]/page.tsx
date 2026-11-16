@@ -20,7 +20,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
       <WhyUs dict={dict} />
       <ServicesPreview lang={lang} dict={dict} />
       <PhotoGallery lang={lang} dict={dict} />
-      <ContactForm dict={dict} />
+      <ContactForm lang={lang} dict={dict} />
     </>
   );
 }

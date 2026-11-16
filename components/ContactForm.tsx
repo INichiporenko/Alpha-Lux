@@ -6,7 +6,7 @@ import { company } from "@/lib/data";
 import type { Dictionary } from "@/lib/dictionary";
 import { Reveal } from "@/components/Reveal";
 
-export function ContactForm({ dict }: { dict: Dictionary }) {
+export function ContactForm({ dict, lang }: { dict: Dictionary; lang: string }) {
   const [status, setStatus] = useState<"idle" | "sending" | "ok" | "error">("idle");
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
@@ -58,6 +58,7 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
 
         <Reveal dir="right" delay={100}>
           <form onSubmit={onSubmit} className="rounded-2xl border border-white/10 bg-panel/90 p-6 md:p-10">
+            <input type="hidden" name="lang" value={lang} />
             <div className="grid gap-6 md:grid-cols-2">
               <label className="block text-[11px] tracking-[0.22em] uppercase text-haze">
                 {dict.contact.name}
@@ -70,7 +71,14 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
             </div>
             <label className="mt-6 block text-[11px] tracking-[0.22em] uppercase text-haze">
               {dict.contact.email}
-              <input name="email" type="email" className="field field-on-dark mt-2" placeholder="info@..." />
+              <input
+                name="email"
+                type="email"
+                required
+                autoComplete="email"
+                className="field field-on-dark mt-2"
+                placeholder="info@..."
+              />
             </label>
             <label className="mt-6 block text-[11px] tracking-[0.22em] uppercase text-haze">
               {dict.contact.task}
