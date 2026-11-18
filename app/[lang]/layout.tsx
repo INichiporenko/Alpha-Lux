@@ -41,13 +41,23 @@ export async function generateMetadata({
       template: dict.meta.titleTemplate,
     },
     description: dict.meta.description,
+    robots: { index: true, follow: true },
+    alternates: {
+      canonical: `/${lang}`,
+      languages: {
+        de: "/de",
+        en: "/en",
+        uk: "/uk",
+        "x-default": "/de",
+      },
+    },
     icons: {
       icon: [
-        { url: "/favicon.ico", sizes: "48x48" },
-        { url: "/favicon-48x48.png", type: "image/png", sizes: "48x48" },
-        { url: "/icon.png", type: "image/png", sizes: "192x192" },
+        { url: `${siteUrl}/favicon.ico`, sizes: "48x48", type: "image/x-icon" },
+        { url: `${siteUrl}/icon.png`, sizes: "192x192", type: "image/png" },
       ],
-      apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+      shortcut: `${siteUrl}/favicon.ico`,
+      apple: [{ url: `${siteUrl}/apple-touch-icon.png`, sizes: "180x180" }],
     },
   };
 }

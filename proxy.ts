@@ -18,9 +18,11 @@ export function proxy(request: NextRequest) {
 
   const locale = getLocale(request);
   request.nextUrl.pathname = `/${locale}${pathname}`;
-  return NextResponse.redirect(request.nextUrl);
+  return NextResponse.redirect(request.nextUrl, 308);
 }
 
 export const config = {
-  matcher: ["/((?!api|_next/static|_next/image|_next/data|favicon.ico|icon.png|photos|videos|.*\\..*).*)"],
+  matcher: [
+    "/((?!api|_next/static|_next/image|_next/data|favicon.ico|icon.png|apple-icon.png|apple-touch-icon.png|robots.txt|sitemap.xml|photos|videos|.*\\..*).*)",
+  ],
 };
